@@ -9,26 +9,62 @@
   border: 1px solid red;
 }
 
+.menu-top{
+  height: 30px;
+}
+
+.menu-top .item{
+  justify-content:end;
+  width: 100px;
+  height: 20px;
+}
+
+
 main {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 130px);
   overflow: auto;
 }
 
-.menu-top{
-  height: 50px;
-}
-
-.menu-bottom{
-  height: 100px;
-}
-
-.flex{
+.flex-wrap{
   display: flex;
   flex-wrap: wrap;
 }
+.flex-end{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+
 
 main .container{
-  margin: auto;
+  justify-content: center;
+  margin: 20px auto;
   width: 90vw;
 
+}
+
+.container .card{
+  position: relative;
+  margin: 2px;
+  width: 200px;
+  height: 150px;
+}
+
+.container .card .name{
+  position: absolute;
+  bottom: 0px;
+  height: 20px;
+  color: white;
+  font-size: 15px;
+}
+
+.menu-bottom{
+  justify-content: space-between;
+  height: 100px;
+}
+
+.menu-bottom .item{
+  width: 250px;
+  height: 100px;
 }
